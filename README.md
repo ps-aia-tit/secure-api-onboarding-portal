@@ -56,7 +56,7 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ## 🚀 Setup Instructions
 
-
+```bash
 # Backend (Spring Boot)
 cd springboot-backend
 ./mvnw spring-boot:run
