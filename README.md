@@ -1,4 +1,4 @@
-# secure-api-onboarding-portal  -SecureOnboard – Angular + Spring Boot Login Module
+# secure-api-onboarding-portal:: SecureOnboard – Angular + Spring Boot Login Module
 
 A modular full-stack POC showcasing secure login, JWT authentication, and role-based access control using Angular and Spring Boot. This is the foundational module for a larger admin dashboard that will manage API onboarding, retry logic, and stale data views.
 
