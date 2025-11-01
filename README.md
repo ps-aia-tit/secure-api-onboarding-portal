@@ -56,7 +56,7 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ## 🚀 Setup Instructions
 
-```bash
+
 # Backend (Spring Boot)
 cd springboot-backend
 ./mvnw spring-boot:run
@@ -68,7 +68,7 @@ ng serve
 
 ---
 
-🧪 Test Credentials
+### 🧪 Test Credentials
 
 • Admin• Username: admin
 • Password: admin123
@@ -80,7 +80,7 @@ ng serve
 
 ---
 
-📌 Next Modules
+### 📌 Next Modules
 
 This repository is designed to evolve into a full-featured admin portal for secure API onboarding and operational control. Upcoming modules include:
 
@@ -106,7 +106,7 @@ Each module will follow the same principles of modularity, security, and recruit
 
 ---
 
-🧠 Author
+### 🧠 Author
 
 Purnendu Shankar
 Java Integration Lead | FinTech Modernization Expert
