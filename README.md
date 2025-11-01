@@ -54,20 +54,8 @@ A modular full-stack API onboarding secure login, JWT authentication, and role-b
 
 ---
 
-## 🚀 Setup Instructions
-
-```bash
-# Backend (Spring Boot)
-cd springboot-backend
-./mvnw spring-boot:run
-
-# Frontend (Angular)
-cd angular-frontend
-npm install
-ng serve
-
 ---
-bash'''
+
 ## 📌 Next Modules
 
 This repository is designed to evolve into a full-featured admin portal for secure API onboarding and operational control. Upcoming modules include:
@@ -93,5 +81,30 @@ This repository is designed to evolve into a full-featured admin portal for secu
   - Integration with Prometheus/Grafana or custom dashboards
 
 Each module will follow the same principles of modularity, security, and recruiter-facing clarity.
+
+---
+
+
+## 🚀 Setup Instructions
+
+ ```bash
+ # Backend (Spring Boot)
+ cd springboot-backend
+ ./mvnw spring-boot:run
+
+ # Frontend (Angular)
+ cd angular-frontend
+ npm install
+ ng serve
+
+---
+
+---
+
+## 🧠 Author
+
+**Purnendu Shankar**  
+Java Integration Lead | FinTech Modernization Expert  
+_Architecting secure, modular solutions for scalable enterprise platforms_
 
 ---
