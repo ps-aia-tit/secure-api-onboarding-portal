@@ -54,24 +54,6 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ---
 
-## 🚀 Setup Instructions
-
-
-```bash
-# Backend (Spring Boot)
-cd springboot-backend
-./mvnw spring-boot:run
-
-# Frontend (Angular)
-cd angular-frontend
-npm install
-ng serve
-
-\'''
-
-
----
-
 ### 🧪 Test Credentials
 
 • Admin• Username: admin
@@ -117,3 +99,17 @@ Java Integration Lead | FinTech Modernization Expert
 Architecting secure, modular solutions for scalable enterprise platforms
 
 ---
+
+
+## 🚀 Setup Instructions
+
+
+```bash
+# Backend (Spring Boot)
+cd springboot-backend
+./mvnw spring-boot:run
+
+# Frontend (Angular)
+cd angular-frontend
+npm install
+ng serve
