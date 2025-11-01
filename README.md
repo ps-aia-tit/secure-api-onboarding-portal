@@ -66,3 +66,50 @@ cd angular-frontend
 npm install
 ng serve
 
+---
+
+🧪 Test Credentials
+
+• Admin• Username: admin
+• Password: admin123
+• Role: ROLE_ADMIN
+
+• User• Username: user
+• Password: user123
+• Role: ROLE_USER
+
+---
+
+📌 Next Modules
+
+This repository is designed to evolve into a full-featured admin portal for secure API onboarding and operational control. Upcoming modules include:
+
+• 🔐 Admin Dashboard• Role-based landing page
+• Summary cards for retry logs, stale data, and onboarded APIs
+• Sidebar navigation and modular routing
+
+• 🔁 Retry & Stale Table Views• Paginated table of failed API calls
+• Manual retry trigger with status feedback
+• Stale record detection and cleanup logic
+
+• 🚀 API Onboarding & Access Management• Form-based onboarding of new APIs (name, endpoint, auth type)
+• Toggle access control (enable/disable)
+• Audit logging and role-based visibility
+
+• 📊 Metrics & Monitoring (Optional)• API usage charts
+• Success/failure trends
+• Integration with Prometheus/Grafana or custom dashboards
+
+
+
+Each module will follow the same principles of modularity, security, and recruiter-facing clarity.
+
+---
+
+🧠 Author
+
+Purnendu Shankar
+Java Integration Lead | FinTech Modernization Expert
+Architecting secure, modular solutions for scalable enterprise platforms
+
+---
