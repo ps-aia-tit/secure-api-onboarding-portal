@@ -1,6 +1,6 @@
 # SecureOnboard – Angular + Spring Boot Login Module
 
-A modular full-stack secure API onboarding portal containing secure login, JWT authentication, and role-based access control using Angular and Spring Boot. This is the foundational module for a larger admin dashboard that will manage API onboarding, retry logic, and stale data views.
+A modular full-stack API onboarding secure login, JWT authentication, and role-based access control using Angular and Spring Boot. This is the foundational module for a larger admin dashboard that will manage API onboarding, retry logic, and stale data views.
 
 ---
 
@@ -56,18 +56,12 @@ A modular full-stack secure API onboarding portal containing secure login, JWT a
 
 ## 🚀 Setup Instructions
 
-### Backend
-
 ```bash
+# Backend (Spring Boot)
 cd springboot-backend
 ./mvnw spring-boot:run
 
----
-
-```bash
-### Frontend
+# Frontend (Angular)
 cd angular-frontend
 npm install
 ng serve
-
----
