@@ -152,6 +152,8 @@ cd springboot-backend
 # Frontend (Angular)
 cd angular-frontend
 npm install
-ng serve```
+ng serve
+
+```
 
 ---
