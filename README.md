@@ -4,6 +4,23 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ---
 
+## 🏦 Domain Impact
+
+SecureOnboard is designed for secure client onboarding in financial platforms. It supports:
+- Encrypted transmission of KYC/PII data
+- Role-based access for advisors and clients
+- Retry logic for API failures in portfolio sync
+- Audit logging for compliance and visibility
+
+---
+
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-green)
+![Angular](https://img.shields.io/badge/Angular-17-red)
+![JWT](https://img.shields.io/badge/Auth-JWT-blue)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHubActions-purple)
+
+---
+
 ## 🔐 Features
 
 - JWT-based login authentication
@@ -13,6 +30,24 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 - Modular folder structure for scalability
 
 ---
+
+<details>
+<summary>🧩 SecureOnboard Architecture Diagram</summary>
+
+```mermaid
+graph TD
+  A[Angular Frontend (Login Page)] --> B[Spring Boot Backend]
+  B --> C[JWT Authentication Filter]
+  C --> D[Role-Based Access Control]
+  D --> E[SecureOnboard APIs]
+  E --> F[Encrypted Messaging Module]
+  E --> G[Client Onboarding Workflow]
+  E --> H[Audit Logging & Metrics]
+  B --> I[Database (Encrypted PII)]
+```
+</details>
+---
+
 
 ## 🧱 Tech Stack
 
@@ -25,10 +60,8 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ---
 
-## 🔐 SecureOnboard Vulnerability Guide — 
-
----
-
+<details>
+<summary>🔐 SecureOnboard Vulnerability Guide</summary>
 
 | #  | Vulnerability                  | Interview Question                                      | SecureOnboard Answer                                                                                                                                                       |
 |----|-------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,7 +76,7 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 | 9  | Improper Logging & Error Handling | How did you improve logging in SecureOnboard?             | Logback was configured with custom converters to mask sensitive onboarding data. Stack traces were suppressed in production and logs were centralized with RBAC. |
 | 10 | Unvalidated Redirects         | How did you prevent open redirects in SecureOnboard?     | Dynamic redirects were replaced with `RedirectView` and URLs were validated against a whitelist to prevent abuse during onboarding transitions. |
 
-
+</details>
 ---
 
 ## 📁 Folder Structure
