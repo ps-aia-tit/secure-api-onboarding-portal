@@ -42,6 +42,7 @@ graph TD
   E --> G[Client Onboarding Workflow]
   E --> H[Audit Logging & Metrics]
   B --> I[Database (Encrypted PII)]
+
 ```
 
 ---
