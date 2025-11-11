@@ -1,12 +1,6 @@
 # SecureOnboard – Angular + Spring Boot Login Module
 
 A modular full-stack POC showcasing secure login, JWT authentication, and role-based access control using Angular and Spring Boot. This is the foundational module for a larger admin dashboard that will manage API onboarding, retry logic, and stale data views.
----
-
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-green)
-![Angular](https://img.shields.io/badge/Angular-17-red)
-![JWT](https://img.shields.io/badge/Auth-JWT-blue)
-![CI/CD](https://img.shields.io/badge/CI/CD-GitHubActions-purple)
 
 ---
 
@@ -30,20 +24,14 @@ SecureOnboard is designed for secure client onboarding in financial platforms. I
 
 ---
 
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-green)
+![Angular](https://img.shields.io/badge/Angular-17-red)
+![JWT](https://img.shields.io/badge/Auth-JWT-blue)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHubActions-purple)
+
+---
+
 ## 🧩 SecureOnboard Architecture
-
-```mermaid
-graph TD
-  A[Angular Frontend (Login Page)] --> B[Spring Boot Backend]
-  B --> C[JWT Authentication Filter]
-  C --> D[Role-Based Access Control]
-  D --> E[SecureOnboard APIs]
-  E --> F[Encrypted Messaging Module]
-  E --> G[Client Onboarding Workflow]
-  E --> H[Audit Logging & Metrics]
-  B --> I[Database (Encrypted PII)]
-
-```
 
 ---
 
