@@ -24,6 +24,23 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 
 ---
 
+
+| #  | Vulnerability                  | Interview Question                                      | SecureOnboard Answer                                                                                                                                                       |
+|----|-------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | SQL Injection                 | How did you prevent SQL injection in SecureOnboard?      | We used Spring Data JPA with parameterized queries for onboarding workflows and validated inputs using Hibernate Validator. Legacy JDBC calls were refactored to use `PreparedStatement`. |
+| 2  | Broken Authentication         | How did you secure authentication in SecureOnboard?      | Spring Security was integrated with BCrypt password encoding and JWT-based stateless authentication. Role-based access was enforced for onboarding stages using `@PreAuthorize`. |
+| 3  | Sensitive Data Exposure       | How did you protect onboarding data in transit and at rest? | HTTPS and TLS 1.2+ were enforced. Personally identifiable information (PII) was encrypted using JCE, and onboarding logs were sanitized to mask sensitive fields. |
+| 4  | Security Misconfiguration     | What misconfigurations did you fix in SecureOnboard?     | Actuator endpoints were restricted using Spring Security, `/env` was disabled, and headers like `X-Frame-Options` and `Content-Security-Policy` were added to harden onboarding APIs. |
+| 5  | Outdated Dependencies         | How did you manage vulnerable dependencies in SecureOnboard? | Snyk and OWASP Dependency-Check were integrated into CI/CD. We migrated from Spring Boot 2.3 to 3.x and used BOM to lock safe versions across onboarding modules. |
+| 6  | Cross-Site Scripting (XSS)    | How did you prevent XSS in SecureOnboard’s UI?           | Thymeleaf’s auto-escaping was used for onboarding forms, and inputs were sanitized using OWASP HTML Sanitizer. CSP headers restricted script sources. |
+| 7  | Cross-Site Request Forgery    | How did you handle CSRF protection in SecureOnboard?     | CSRF tokens were enabled for onboarding web flows. For REST APIs, CSRF was disabled and JWT was used. Exceptions were documented for frontend integration. |
+| 8  | Insecure Deserialization      | How did you mitigate deserialization risks in onboarding? | Java serialization was replaced with JSON and payloads were validated using Jackson. Deserialization was disabled for untrusted sources to prevent remote code execution. |
+| 9  | Improper Logging & Error Handling | How did you improve logging in SecureOnboard?             | Logback was configured with custom converters to mask sensitive onboarding data. Stack traces were suppressed in production and logs were centralized with RBAC. |
+| 10 | Unvalidated Redirects         | How did you prevent open redirects in SecureOnboard?     | Dynamic redirects were replaced with `RedirectView` and URLs were validated against a whitelist to prevent abuse during onboarding transitions. |
+
+
+---
+
 ## 📁 Folder Structure
 
 ### Angular (Frontend)
