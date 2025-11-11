@@ -22,6 +22,11 @@ A modular full-stack POC showcasing secure login, JWT authentication, and role-b
 - **Database:** H2 (in-memory) or PostgreSQL
 - **DevOps (optional):** Docker + GitHub Actions
 
+
+---
+
+## 🔐 SecureOnboard Vulnerability Guide — 
+
 ---
 
 
