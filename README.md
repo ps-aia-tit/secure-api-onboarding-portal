@@ -30,8 +30,7 @@ SecureOnboard is designed for secure client onboarding in financial platforms. I
 
 ---
 
-<details>
-<summary>🧩 SecureOnboard Architecture Diagram</summary>
+## 🧩 SecureOnboard Architecture
 
 ```mermaid
 graph TD
@@ -44,7 +43,7 @@ graph TD
   E --> H[Audit Logging & Metrics]
   B --> I[Database (Encrypted PII)]
 ```
-</details>
+
 ---
 
 
@@ -59,8 +58,7 @@ graph TD
 
 ---
 
-<details>
-<summary>🔐 SecureOnboard Vulnerability Guide</summary>
+## 🔐 SecureOnboard Vulnerability Guide
 
 | #  | Vulnerability                  | Interview Question                                      | SecureOnboard Answer                                                                                                                                                       |
 |----|-------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +73,6 @@ graph TD
 | 9  | Improper Logging & Error Handling | How did you improve logging in SecureOnboard?             | Logback was configured with custom converters to mask sensitive onboarding data. Stack traces were suppressed in production and logs were centralized with RBAC. |
 | 10 | Unvalidated Redirects         | How did you prevent open redirects in SecureOnboard?     | Dynamic redirects were replaced with `RedirectView` and URLs were validated against a whitelist to prevent abuse during onboarding transitions. |
 
-</details>
 ---
 
 ## 📁 Folder Structure
